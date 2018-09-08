@@ -1,1 +1,1 @@
-# stat545_md_explorer
+# A repo for exploring GitHub and markdown.
