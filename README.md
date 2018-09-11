@@ -1,1 +1,1 @@
-# A repo for exploring GitHub and markdown.
+# A repo for uploading in-class participation exercises for STAT 454
