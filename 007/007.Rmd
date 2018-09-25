@@ -188,7 +188,7 @@ gvsl + geom_hex()
 ```
 
 ```{r}
-gvsl + geom_density2d() +
+gvsl + geom_density2d()
 
 ```
  M: regression line
