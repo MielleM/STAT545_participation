@@ -23,6 +23,21 @@ library(gapminder)
 - As with all (?) aesthetics, we can also have them _not_ as aesthetics!
     - Try some shapes: first as integer from 0-24, then as keyboard characters.
     - What's up with `pch`?
+    
+```{r}
+gvsl <- ggplot(gapminder, aes(gdpPercap, lifeExp)) +
+  scale_x_log10()
+
+gvsl +
+  geom_point(aes(shape=continent), alpha = 0.2)
+```
+    
+```{r}
+gvsl + 
+  geom_point(shape = 7)
+gvsl + geom_point(pch = 7)
+gvsl + geom_point(shape = "$")
+```
 
 List of shapes can be found [at the bottom of the `scale_shape` documentation](https://ggplot2.tidyverse.org/reference/scale_shape.html).
 
@@ -34,12 +49,32 @@ Make a scatterplot. Then:
 - Try `colour` and `color`. 
 - Try colour as numeric variable.
     - Try `trans="log10"` for log scale.
+    
+```{r}
+gvsl + geom_point(aes(color = continent))
+```
+    
+```{r}
+gvsl + geom_point(aes(color = pop)) +
+  scale_color_continuous(trans="log10")
+```
 
 
 Make a line plot of `gdpPercap` over time for all countries. Colour by `lifeExp > 60` (remember that `lifeExp` looks bimodal?)
+M: this makes it a bimodal variable essentially. You can transform the data within the aes()
+```{r}
+gvsl + geom_point(aes(color = lifeExp > 60))
+```
 
 
 Try adding colour to a histogram. How is this different?
+
+```{r}
+ggplot(gapminder, aes(lifeExp)) +
+  geom_histogram(aes(color = continent))
+```
+
+
 
 ## Facetting
 
