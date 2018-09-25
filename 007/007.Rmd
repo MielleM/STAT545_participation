@@ -1,8 +1,6 @@
 ---
 title: "cm007 Exercises: Exploring Aesthetic Mappings"
 output: github_document
-editor_options: 
-  chunk_output_type: inline
 ---
 
 
