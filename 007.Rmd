@@ -68,10 +68,11 @@ gvsl + geom_point(aes(color = lifeExp > 60))
 
 
 Try adding colour to a histogram. How is this different?
+M: color is the line, fill is the fill color
 
 ```{r}
 ggplot(gapminder, aes(lifeExp)) +
-  geom_histogram(aes(color = continent))
+  geom_histogram(aes(fill = continent))
 ```
 
 
@@ -80,13 +81,48 @@ ggplot(gapminder, aes(lifeExp)) +
 
 Make histograms of `gdpPercap` for each continent. Try the `scales` and `ncol` arguments. 
 
+
+```{r}
+ggplot(gapminder, aes(lifeExp)) +
+  facet_wrap( ~ continent) +
+  geom_histogram()
+  
+```
+
+```{r}
+ggplot(gapminder, aes(lifeExp)) +
+  facet_wrap( ~ continent, scales = "free_x") +
+  geom_histogram()
+
+```
+
 Remove Oceania. Add another variable: `lifeExp > 60`. 
+M: "facet_grid" for multiple variabes 
+```{r}
+ggplot(gapminder, aes(gdpPercap)) +
+  facet_grid(continent ~ lifeExp > 60) +
+  geom_histogram()
+```
+
 
 ## Bubble Plots
 
 - Add a `size` aesthetic to a scatterplot. What about `cex`?
+
+```{r}
+gvsl + geom_point(aes(size = pop), alpha = 0.2) +
+  scale_size_area()
+```
+
 - Try adding `scale_radius()` and `scale_size_area()`. What's better?
 - Use `shape=21` to distinguish between `fill` (interior) and `colour` (exterior).
+
+M: here, shape is OUTSIDE "aes()" to force it for every object and not be based on a variable 
+```{r}
+gvsl + 
+  geom_point(aes(size = pop, fill = continent), 
+             shape = 21, color = "black", alpha = 0.2)
+```
 
 ## "Complete" plot
 
@@ -96,6 +132,12 @@ Let's try plotting much of the data.
 - facet by year
 - colour by continent
 
+```{r}
+gvsl + 
+  geom_point(aes(size = pop, color = continent)) +
+  scale_size_area() +
+  facet_wrap( ~ year)
+```
 
 
 # Continue from last time (geom exploration with `x` and `y` aesthetics)
