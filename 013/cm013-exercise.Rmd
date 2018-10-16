@@ -3,7 +3,6 @@ title: "cm013 Exercise"
 output: github_document
 editor_options: 
   chunk_output_type: inline
-  keep_md: true
 ---
 
 ```{r}
