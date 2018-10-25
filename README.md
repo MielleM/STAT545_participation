@@ -7,5 +7,6 @@ For 545 assignments, folders begin with 0 (e.g. class 3 assignments are in 003).
 For 547 assignments, folders begin with 1 (e.g. class 3 assignments are in 103). 
 
 [class 1](https://github.com/MielleM/STAT545_participation/tree/master/101)
+
 [class 2]()
 
