@@ -1,9 +1,13 @@
 ---
 title: "STAT 547 Class Meeting 02 Worksheet"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
+output: html_document
+
 ---
+
+```{r setup, cache = F}
+knitr::opts_chunk$set(error = TRUE)
+```
+
 
 ```{r}
 suppressPackageStartupMessages(library(tidyverse))
@@ -25,7 +29,20 @@ Today's lesson has been drawn from the following resources:
 
 __Goal__: Go over some basic functionality of `stringr`. 
 
-There's that famous sentence about the quick brown fox that contains all letters of the alphabet, although I don't quite remember the sentence. Demo: Check to see if it's in the `sentences` data. Try:
+There's that famous sentence about the quick brown fox that contains all letters of the alphabet, although I don't quite remember the sentence.Show in New WindowClear OutputExpand/Collapse Output
+
+Show in New WindowClear OutputExpand/Collapse Output
+
+str_view
+htmlwidget
+
+str_view
+htmlwidget
+
+Show in New WindowClear OutputExpand/Collapse Output
+
+Show in New WindowClear OutputExpand/Collapse Output
+ Demo: Check to see if it's in the `sentences` data. Try:
 
 `str_detect(string, pattern)`   
 `str_subset(string, pattern)`
@@ -196,6 +213,8 @@ countries <- levels(gapminder$country)
 ### The "any character"
 
 Find all countries in the gapminder data set with the following pattern: "i", followed by any single character, followed by "a":
+> regular expressions are case sensitive 
+> . is a single wildcard in regular expressions
 
 ```{r}
 str_subset(countries, pattern = "i.a")
@@ -215,8 +234,8 @@ str_view_all(countries, pattern = "i.a", match=TRUE)
 Exercise: Canada isn't the only country with three interspersed "a"'s. Find the others. Try both `str_view_all()` and `str_subset()`.
 
 ```{r}
-str_view_all(FILL_THIS_IN)
-str_subset(FILL_THIS_IN)
+str_view_all(countries, pattern = "a.a.a", match = TRUE)
+str_subset(countries, pattern = "a.a.a") #actually gives us a the vector 
 ```
 
 
@@ -254,10 +273,12 @@ Note that not all special characters "work" within `[]`, but some do, and do not
 
 >  `$` `.` `|` `?` `*` `+` `(` `)` `[` `{`. Unfortunately, a few characters have special meaning even inside a character class and must be handled with backslash escapes: `]` `\` `^` and `-`.
 
-Exercise: Find all countries with three non-vowels next to each other.
+Exercise: Find all countries with three non-vowels next to each other. 
+
+>To do without spaces, added spaces inside square brackets
 
 ```{r}
-str_view_all_match(countries, pattern = "YOUR_REGEX_HERE")
+str_view_all_match(countries, pattern = "[^aeiou ][^aeiou ][^aeiou ]")
 ```
 
 
@@ -269,11 +290,18 @@ str_view_all_match(countries, pattern = "YOUR_REGEX_HERE")
 
 Beer or bear?
 
+
+
 ```{r}
+# parenthesis are like math, does what's in the parenthesis first and then the rest 
 c("bear", "beer", "bar") %>% 
     str_view_all_match(pattern = "be(e|a)r")
 ```
-
+```{r}
+#give me e OR a or neither?
+c("bear", "beer", "bar", "bee", "nice") %>% 
+    str_view_all_match(pattern = "bee|ar")
+```
 
 ### Quantifiers/Repetition
 
@@ -288,7 +316,7 @@ See list at https://r4ds.had.co.nz/strings.html#repetition
 Find all countries that have any number of o's (but at least 1) following r:
 
 ```{r}
-str_view_all_match(countries, "re+")
+str_view_all_match(countries, "ro+")
 ```
 
 
@@ -302,7 +330,7 @@ str_view_all_match(countries, "e{2}")
 Exercise: Find all countries that have either "a" or "e", twice in a row (with a changeover allowed, such as "ae" or "ea"):
 
 ```{r}
-str_view_all_match(countries, pattern="YOUR_REGEX_HERE")
+str_view_all_match(countries, pattern="(a|e){2}")
 ```
 
 
