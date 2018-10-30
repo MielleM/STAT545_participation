@@ -621,6 +621,14 @@ GrandBudapest2      Moonrise3      Chevalier         Zissou   FantasticFox     D
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFwX2Nocih3ZXNhbmRlcnNvbiwgMSkgIyAlPiUgdW5uYW1lKClcbmBgYCJ9 -->
 <pre class="r"><code>map_chr(wesanderson, 1) # %&gt;% unname()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIEdyYW5kQnVkYXBlc3QgICAgICBNb29ucmlzZTEgICAgICAgICBSb3lhbDEgICAgICBNb29ucmlzZTIgICAgIENhdmFsY2FudGkgICAgICAgICBSb3lhbDIgXG4gICAgIFwiI0YxQkI3QlwiICAgICAgXCIjRjNERjZDXCIgICAgICBcIiM4OTlEQTRcIiAgICAgIFwiIzc5OEU4N1wiICAgICAgXCIjRDhCNzBBXCIgICAgICBcIiM5QTg4MjJcIiBcbkdyYW5kQnVkYXBlc3QyICAgICAgTW9vbnJpc2UzICAgICAgQ2hldmFsaWVyICAgICAgICAgWmlzc291ICAgRmFudGFzdGljRm94ICAgICBEYXJqZWVsaW5nIFxuICAgICBcIiNFNkEwQzRcIiAgICAgIFwiIzg1RDRFM1wiICAgICAgXCIjNDQ2NDU1XCIgICAgICBcIiMzQjlBQjJcIiAgICAgIFwiI0REOEQyOVwiICAgICAgXCIjRkYwMDAwXCIgXG4gICAgICBSdXNobW9yZSAgIEJvdHRsZVJvY2tldCAgICBEYXJqZWVsaW5nMiBcbiAgICAgXCIjRTFCRDZEXCIgICAgICBcIiNBNDI4MjBcIiAgICAgIFwiI0VDQ0JBRVwiIFxuIn0= -->
+<pre><code> GrandBudapest      Moonrise1         Royal1      Moonrise2     Cavalcanti         Royal2 
+     &quot;#F1BB7B&quot;      &quot;#F3DF6C&quot;      &quot;#899DA4&quot;      &quot;#798E87&quot;      &quot;#D8B70A&quot;      &quot;#9A8822&quot; 
+GrandBudapest2      Moonrise3      Chevalier         Zissou   FantasticFox     Darjeeling 
+     &quot;#E6A0C4&quot;      &quot;#85D4E3&quot;      &quot;#446455&quot;      &quot;#3B9AB2&quot;      &quot;#DD8D29&quot;      &quot;#FF0000&quot; 
+      Rushmore   BottleRocket    Darjeeling2 
+     &quot;#E1BD6D&quot;      &quot;#A42820&quot;      &quot;#ECCBAE&quot; </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -637,9 +645,111 @@ GrandBudapest2      Moonrise3      Chevalier         Zissou   FantasticFox     D
 <p>Note: each character’s list entry has a component named <code>titles</code> as the 9th entry.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuWU9VUl9DT0RFX0hFUkVcbmBgYCJ9 -->
-<pre class="r"><code>YOUR_CODE_HERE</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFwKGdvdF9jaGFycywgXCJ0aXRsZXNcIilcbmBgYCJ9 -->
+<pre class="r"><code>map(got_chars, &quot;titles&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiW1sxXV1cblsxXSBcIlByaW5jZSBvZiBXaW50ZXJmZWxsXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzJdIFwiQ2FwdGFpbiBvZiBTZWEgQml0Y2hcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bM10gXCJMb3JkIG9mIHRoZSBJcm9uIElzbGFuZHMgKGJ5IGxhdyBvZiB0aGUgZ3JlZW4gbGFuZHMpXCJcblxuW1syXV1cblsxXSBcIkFjdGluZyBIYW5kIG9mIHRoZSBLaW5nIChmb3JtZXIpXCIgXCJNYXN0ZXIgb2YgQ29pbiAoZm9ybWVyKVwiICAgICAgICAgXG5cbltbM11dXG5bMV0gXCJMb3JkIENhcHRhaW4gb2YgdGhlIElyb24gRmxlZXRcIiBcIk1hc3RlciBvZiB0aGUgSXJvbiBWaWN0b3J5XCIgICAgXG5cbltbNF1dXG5bMV0gXCJcIlxuXG5bWzVdXVxuWzFdIFwiQ2FwdGFpbiBvZiB0aGUgR3VhcmQgYXQgU3Vuc3BlYXJcIlxuXG5bWzZdXVxuWzFdIFwiXCJcblxuW1s3XV1cblsxXSBcIk1hZXN0ZXJcIlxuXG5bWzhdXVxuWzFdIFwiUHJpbmNlc3Mgb2YgRG9ybmVcIlxuXG5bWzldXVxuWzFdIFwiUXVlZW4gb2YgdGhlIEFuZGFscyBhbmQgdGhlIFJob3luYXIgYW5kIHRoZSBGaXJzdCBNZW4sIExvcmQgb2YgdGhlIFNldmVuIEtpbmdkb21zXCJcblsyXSBcIktoYWxlZXNpIG9mIHRoZSBHcmVhdCBHcmFzcyBTZWFcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bM10gXCJCcmVha2VyIG9mIFNoYWNrbGVzL0NoYWluc1wiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzRdIFwiUXVlZW4gb2YgTWVlcmVlblwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbls1XSBcIlByaW5jZXNzIG9mIERyYWdvbnN0b25lXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5cbltbMTBdXVxuWzFdIFwiU2VyXCIgICAgICAgICAgICAgICAgICAgICAgIFwiTG9yZCBvZiB0aGUgUmFpbndvb2RcIiAgICAgIFwiQWRtaXJhbCBvZiB0aGUgTmFycm93IFNlYVwiXG5bNF0gXCJIYW5kIG9mIHRoZSBLaW5nXCIgICAgICAgICBcblxuW1sxMV1dXG5bMV0gXCJQcmluY2Vzc1wiXG5cbltbMTJdXVxuWzFdIFwiU2VyXCJcblxuW1sxM11dXG5bMV0gXCJQcmluY2Vzc1wiICAgICAgICAgICAgICAgICAgICBcIkNhcHRhaW4gb2YgdGhlIEJsYWNrIFdpbmRcIiAgIFwiQ29ucXVlcm9yIG9mIERlZXB3b29kIE1vdHRlXCJcblxuW1sxNF1dXG5bMV0gXCJTZXJcIiAgICAgICAgICAgICAgIFwiSGFuZCBvZiB0aGUgUXVlZW5cIlxuXG5bWzE1XV1cblsxXSBcIlwiXG5cbltbMTZdXVxuWzFdIFwiUHJpbmNlIG9mIFdpbnRlcmZlbGxcIlxuXG5bWzE3XV1cblsxXSBcIlwiXG5cbltbMThdXVxuWzFdIFwiTGFkeSBvZiBXaW50ZXJmZWxsXCJcblxuW1sxOV1dXG5bMV0gXCJMaWdodCBvZiB0aGUgV2VzdFwiICAgICAgXCJRdWVlbiBEb3dhZ2VyXCIgICAgICAgICAgXCJQcm90ZWN0b3Igb2YgdGhlIFJlYWxtXCJcbls0XSBcIkxhZHkgb2YgQ2FzdGVybHkgUm9ja1wiICBcIlF1ZWVuIFJlZ2VudFwiICAgICAgICAgIFxuXG5bWzIwXV1cblsxXSBcIkxvcmQgb2YgV2ludGVyZmVsbFwiICAgICBcIldhcmRlbiBvZiB0aGUgTm9ydGhcIiAgICBcIkhhbmQgb2YgdGhlIEtpbmdcIiAgICAgIFxuWzRdIFwiUHJvdGVjdG9yIG9mIHRoZSBSZWFsbVwiIFwiUmVnZW50XCIgICAgICAgICAgICAgICAgXG5cbltbMjFdXVxuWzFdIFwiU2VyXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkxvcmQgQ29tbWFuZGVyIG9mIHRoZSBLaW5nc2d1YXJkXCJcblszXSBcIldhcmRlbiBvZiB0aGUgRWFzdCAoZm9ybWVybHkpXCIgICBcblxuW1syMl1dXG5bMV0gXCJMb3JkIG9mIEdyaWZmaW4ncyBSb29zdFwiIFwiSGFuZCBvZiB0aGUgS2luZ1wiICAgICAgICBcIkhhbmQgb2YgdGhlIFRydWUgS2luZ1wiICBcblxuW1syM11dXG5bMV0gXCJMb3JkIENvbW1hbmRlciBvZiB0aGUgTmlnaHQncyBXYXRjaFwiXG5cbltbMjRdXVxuWzFdIFwiUHJpZXN0IG9mIHRoZSBEcm93bmVkIEdvZFwiICAgICAgICAgICAgICBcIkNhcHRhaW4gb2YgdGhlIEdvbGRlbiBTdG9ybSAoZm9ybWVybHkpXCJcblxuW1syNV1dXG5bMV0gXCJTZXJcIiAgICAgICAgICAgICAgICAgICAgXCJNYXN0ZXIgb2YgbGF3c1wiICAgICAgICAgXCJMb3JkIFJlZ2VudFwiICAgICAgICAgICBcbls0XSBcIlByb3RlY3RvciBvZiB0aGUgUmVhbG1cIlxuXG5bWzI2XV1cblsxXSBcIlwiXG5cbltbMjddXVxuWzFdIFwiXCJcblxuW1syOF1dXG5bMV0gXCJQcmluY2VcIlxuXG5bWzI5XV1cblsxXSBcIlwiXG5cbltbMzBdXVxuWzFdIFwiUHJpbmNlc3NcIlxuIn0= -->
+<pre><code>[[1]]
+[1] &quot;Prince of Winterfell&quot;                                
+[2] &quot;Captain of Sea Bitch&quot;                                
+[3] &quot;Lord of the Iron Islands (by law of the green lands)&quot;
+
+[[2]]
+[1] &quot;Acting Hand of the King (former)&quot; &quot;Master of Coin (former)&quot;         
+
+[[3]]
+[1] &quot;Lord Captain of the Iron Fleet&quot; &quot;Master of the Iron Victory&quot;    
+
+[[4]]
+[1] &quot;&quot;
+
+[[5]]
+[1] &quot;Captain of the Guard at Sunspear&quot;
+
+[[6]]
+[1] &quot;&quot;
+
+[[7]]
+[1] &quot;Maester&quot;
+
+[[8]]
+[1] &quot;Princess of Dorne&quot;
+
+[[9]]
+[1] &quot;Queen of the Andals and the Rhoynar and the First Men, Lord of the Seven Kingdoms&quot;
+[2] &quot;Khaleesi of the Great Grass Sea&quot;                                                  
+[3] &quot;Breaker of Shackles/Chains&quot;                                                       
+[4] &quot;Queen of Meereen&quot;                                                                 
+[5] &quot;Princess of Dragonstone&quot;                                                          
+
+[[10]]
+[1] &quot;Ser&quot;                       &quot;Lord of the Rainwood&quot;      &quot;Admiral of the Narrow Sea&quot;
+[4] &quot;Hand of the King&quot;         
+
+[[11]]
+[1] &quot;Princess&quot;
+
+[[12]]
+[1] &quot;Ser&quot;
+
+[[13]]
+[1] &quot;Princess&quot;                    &quot;Captain of the Black Wind&quot;   &quot;Conqueror of Deepwood Motte&quot;
+
+[[14]]
+[1] &quot;Ser&quot;               &quot;Hand of the Queen&quot;
+
+[[15]]
+[1] &quot;&quot;
+
+[[16]]
+[1] &quot;Prince of Winterfell&quot;
+
+[[17]]
+[1] &quot;&quot;
+
+[[18]]
+[1] &quot;Lady of Winterfell&quot;
+
+[[19]]
+[1] &quot;Light of the West&quot;      &quot;Queen Dowager&quot;          &quot;Protector of the Realm&quot;
+[4] &quot;Lady of Casterly Rock&quot;  &quot;Queen Regent&quot;          
+
+[[20]]
+[1] &quot;Lord of Winterfell&quot;     &quot;Warden of the North&quot;    &quot;Hand of the King&quot;      
+[4] &quot;Protector of the Realm&quot; &quot;Regent&quot;                
+
+[[21]]
+[1] &quot;Ser&quot;                              &quot;Lord Commander of the Kingsguard&quot;
+[3] &quot;Warden of the East (formerly)&quot;   
+
+[[22]]
+[1] &quot;Lord of Griffin's Roost&quot; &quot;Hand of the King&quot;        &quot;Hand of the True King&quot;  
+
+[[23]]
+[1] &quot;Lord Commander of the Night's Watch&quot;
+
+[[24]]
+[1] &quot;Priest of the Drowned God&quot;              &quot;Captain of the Golden Storm (formerly)&quot;
+
+[[25]]
+[1] &quot;Ser&quot;                    &quot;Master of laws&quot;         &quot;Lord Regent&quot;           
+[4] &quot;Protector of the Realm&quot;
+
+[[26]]
+[1] &quot;&quot;
+
+[[27]]
+[1] &quot;&quot;
+
+[[28]]
+[1] &quot;Prince&quot;
+
+[[29]]
+[1] &quot;&quot;
+
+[[30]]
+[1] &quot;Princess&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="2" style="list-style-type: decimal">
@@ -654,9 +764,260 @@ GrandBudapest2      Moonrise3      Chevalier         Zissou   FantasticFox     D
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGVzaXJlZF9pbmZvIDwtIGMoXCJuYW1lXCIsIFwiYm9yblwiKVxuYGBgIn0= -->
-<pre class="r"><code>desired_info &lt;- c(&quot;name&quot;, &quot;born&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGVzaXJlZF9pbmZvIDwtIGMoXCJuYW1lXCIsIFwiYm9yblwiKVxubWFwKGdvdF9jaGFycywgYFtgLCBkZXNpcmVkX2luZm8pXG5gYGAifQ== -->
+<pre class="r"><code>desired_info &lt;- c(&quot;name&quot;, &quot;born&quot;)
+map(got_chars, `[`, desired_info)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiW1sxXV1cbltbMV1dJG5hbWVcblsxXSBcIlRoZW9uIEdyZXlqb3lcIlxuXG5bWzFdXSRib3JuXG5bMV0gXCJJbiAyNzggQUMgb3IgMjc5IEFDLCBhdCBQeWtlXCJcblxuXG5bWzJdXVxuW1syXV0kbmFtZVxuWzFdIFwiVHlyaW9uIExhbm5pc3RlclwiXG5cbltbMl1dJGJvcm5cblsxXSBcIkluIDI3MyBBQywgYXQgQ2FzdGVybHkgUm9ja1wiXG5cblxuW1szXV1cbltbM11dJG5hbWVcblsxXSBcIlZpY3RhcmlvbiBHcmV5am95XCJcblxuW1szXV0kYm9yblxuWzFdIFwiSW4gMjY4IEFDIG9yIGJlZm9yZSwgYXQgUHlrZVwiXG5cblxuW1s0XV1cbltbNF1dJG5hbWVcblsxXSBcIldpbGxcIlxuXG5bWzRdXSRib3JuXG5bMV0gXCJcIlxuXG5cbltbNV1dXG5bWzVdXSRuYW1lXG5bMV0gXCJBcmVvIEhvdGFoXCJcblxuW1s1XV0kYm9yblxuWzFdIFwiSW4gMjU3IEFDIG9yIGJlZm9yZSwgYXQgTm9ydm9zXCJcblxuXG5bWzZdXVxuW1s2XV0kbmFtZVxuWzFdIFwiQ2hldHRcIlxuXG5bWzZdXSRib3JuXG5bMV0gXCJBdCBIYWcncyBNaXJlXCJcblxuXG5bWzddXVxuW1s3XV0kbmFtZVxuWzFdIFwiQ3Jlc3NlblwiXG5cbltbN11dJGJvcm5cblsxXSBcIkluIDIxOSBBQyBvciAyMjAgQUNcIlxuXG5cbltbOF1dXG5bWzhdXSRuYW1lXG5bMV0gXCJBcmlhbm5lIE1hcnRlbGxcIlxuXG5bWzhdXSRib3JuXG5bMV0gXCJJbiAyNzYgQUMsIGF0IFN1bnNwZWFyXCJcblxuXG5bWzldXVxuW1s5XV0kbmFtZVxuWzFdIFwiRGFlbmVyeXMgVGFyZ2FyeWVuXCJcblxuW1s5XV0kYm9yblxuWzFdIFwiSW4gMjg0IEFDLCBhdCBEcmFnb25zdG9uZVwiXG5cblxuW1sxMF1dXG5bWzEwXV0kbmFtZVxuWzFdIFwiRGF2b3MgU2Vhd29ydGhcIlxuXG5bWzEwXV0kYm9yblxuWzFdIFwiSW4gMjYwIEFDIG9yIGJlZm9yZSwgYXQgS2luZydzIExhbmRpbmdcIlxuXG5cbltbMTFdXVxuW1sxMV1dJG5hbWVcblsxXSBcIkFyeWEgU3RhcmtcIlxuXG5bWzExXV0kYm9yblxuWzFdIFwiSW4gMjg5IEFDLCBhdCBXaW50ZXJmZWxsXCJcblxuXG5bWzEyXV1cbltbMTJdXSRuYW1lXG5bMV0gXCJBcnlzIE9ha2hlYXJ0XCJcblxuW1sxMl1dJGJvcm5cblsxXSBcIkF0IE9sZCBPYWtcIlxuXG5cbltbMTNdXVxuW1sxM11dJG5hbWVcblsxXSBcIkFzaGEgR3JleWpveVwiXG5cbltbMTNdXSRib3JuXG5bMV0gXCJJbiAyNzUgQUMgb3IgMjc2IEFDLCBhdCBQeWtlXCJcblxuXG5bWzE0XV1cbltbMTRdXSRuYW1lXG5bMV0gXCJCYXJyaXN0YW4gU2VsbXlcIlxuXG5bWzE0XV0kYm9yblxuWzFdIFwiSW4gMjM3IEFDXCJcblxuXG5bWzE1XV1cbltbMTVdXSRuYW1lXG5bMV0gXCJWYXJhbXlyXCJcblxuW1sxNV1dJGJvcm5cblsxXSBcIkF0IGEgdmlsbGFnZSBCZXlvbmQgdGhlIFdhbGxcIlxuXG5cbltbMTZdXVxuW1sxNl1dJG5hbWVcblsxXSBcIkJyYW5kb24gU3RhcmtcIlxuXG5bWzE2XV0kYm9yblxuWzFdIFwiSW4gMjkwIEFDLCBhdCBXaW50ZXJmZWxsXCJcblxuXG5bWzE3XV1cbltbMTddXSRuYW1lXG5bMV0gXCJCcmllbm5lIG9mIFRhcnRoXCJcblxuW1sxN11dJGJvcm5cblsxXSBcIkluIDI4MCBBQ1wiXG5cblxuW1sxOF1dXG5bWzE4XV0kbmFtZVxuWzFdIFwiQ2F0ZWx5biBTdGFya1wiXG5cbltbMThdXSRib3JuXG5bMV0gXCJJbiAyNjQgQUMsIGF0IFJpdmVycnVuXCJcblxuXG5bWzE5XV1cbltbMTldXSRuYW1lXG5bMV0gXCJDZXJzZWkgTGFubmlzdGVyXCJcblxuW1sxOV1dJGJvcm5cblsxXSBcIkluIDI2NiBBQywgYXQgQ2FzdGVybHkgUm9ja1wiXG5cblxuW1syMF1dXG5bWzIwXV0kbmFtZVxuWzFdIFwiRWRkYXJkIFN0YXJrXCJcblxuW1syMF1dJGJvcm5cblsxXSBcIkluIDI2MyBBQywgYXQgV2ludGVyZmVsbFwiXG5cblxuW1syMV1dXG5bWzIxXV0kbmFtZVxuWzFdIFwiSmFpbWUgTGFubmlzdGVyXCJcblxuW1syMV1dJGJvcm5cblsxXSBcIkluIDI2NiBBQywgYXQgQ2FzdGVybHkgUm9ja1wiXG5cblxuW1syMl1dXG5bWzIyXV0kbmFtZVxuWzFdIFwiSm9uIENvbm5pbmd0b25cIlxuXG5bWzIyXV0kYm9yblxuWzFdIFwiSW4gb3IgYmV0d2VlbiAyNjMgQUMgYW5kIDI2NSBBQ1wiXG5cblxuW1syM11dXG5bWzIzXV0kbmFtZVxuWzFdIFwiSm9uIFNub3dcIlxuXG5bWzIzXV0kYm9yblxuWzFdIFwiSW4gMjgzIEFDXCJcblxuXG5bWzI0XV1cbltbMjRdXSRuYW1lXG5bMV0gXCJBZXJvbiBHcmV5am95XCJcblxuW1syNF1dJGJvcm5cblsxXSBcIkluIG9yIGJldHdlZW4gMjY5IEFDIGFuZCAyNzMgQUMsIGF0IFB5a2VcIlxuXG5cbltbMjVdXVxuW1syNV1dJG5hbWVcblsxXSBcIktldmFuIExhbm5pc3RlclwiXG5cbltbMjVdXSRib3JuXG5bMV0gXCJJbiAyNDQgQUNcIlxuXG5cbltbMjZdXVxuW1syNl1dJG5hbWVcblsxXSBcIk1lbGlzYW5kcmVcIlxuXG5bWzI2XV0kYm9yblxuWzFdIFwiQXQgVW5rbm93blwiXG5cblxuW1syN11dXG5bWzI3XV0kbmFtZVxuWzFdIFwiTWVycmV0dCBGcmV5XCJcblxuW1syN11dJGJvcm5cblsxXSBcIkluIDI2MiBBQ1wiXG5cblxuW1syOF1dXG5bWzI4XV0kbmFtZVxuWzFdIFwiUXVlbnR5biBNYXJ0ZWxsXCJcblxuW1syOF1dJGJvcm5cblsxXSBcIkluIDI4MSBBQywgYXQgU3Vuc3BlYXIsIERvcm5lXCJcblxuXG5bWzI5XV1cbltbMjldXSRuYW1lXG5bMV0gXCJTYW13ZWxsIFRhcmx5XCJcblxuW1syOV1dJGJvcm5cblsxXSBcIkluIDI4MyBBQywgYXQgSG9ybiBIaWxsXCJcblxuXG5bWzMwXV1cbltbMzBdXSRuYW1lXG5bMV0gXCJTYW5zYSBTdGFya1wiXG5cbltbMzBdXSRib3JuXG5bMV0gXCJJbiAyODYgQUMsIGF0IFdpbnRlcmZlbGxcIlxuIn0= -->
+<pre><code>[[1]]
+[[1]]$name
+[1] &quot;Theon Greyjoy&quot;
+
+[[1]]$born
+[1] &quot;In 278 AC or 279 AC, at Pyke&quot;
+
+
+[[2]]
+[[2]]$name
+[1] &quot;Tyrion Lannister&quot;
+
+[[2]]$born
+[1] &quot;In 273 AC, at Casterly Rock&quot;
+
+
+[[3]]
+[[3]]$name
+[1] &quot;Victarion Greyjoy&quot;
+
+[[3]]$born
+[1] &quot;In 268 AC or before, at Pyke&quot;
+
+
+[[4]]
+[[4]]$name
+[1] &quot;Will&quot;
+
+[[4]]$born
+[1] &quot;&quot;
+
+
+[[5]]
+[[5]]$name
+[1] &quot;Areo Hotah&quot;
+
+[[5]]$born
+[1] &quot;In 257 AC or before, at Norvos&quot;
+
+
+[[6]]
+[[6]]$name
+[1] &quot;Chett&quot;
+
+[[6]]$born
+[1] &quot;At Hag's Mire&quot;
+
+
+[[7]]
+[[7]]$name
+[1] &quot;Cressen&quot;
+
+[[7]]$born
+[1] &quot;In 219 AC or 220 AC&quot;
+
+
+[[8]]
+[[8]]$name
+[1] &quot;Arianne Martell&quot;
+
+[[8]]$born
+[1] &quot;In 276 AC, at Sunspear&quot;
+
+
+[[9]]
+[[9]]$name
+[1] &quot;Daenerys Targaryen&quot;
+
+[[9]]$born
+[1] &quot;In 284 AC, at Dragonstone&quot;
+
+
+[[10]]
+[[10]]$name
+[1] &quot;Davos Seaworth&quot;
+
+[[10]]$born
+[1] &quot;In 260 AC or before, at King's Landing&quot;
+
+
+[[11]]
+[[11]]$name
+[1] &quot;Arya Stark&quot;
+
+[[11]]$born
+[1] &quot;In 289 AC, at Winterfell&quot;
+
+
+[[12]]
+[[12]]$name
+[1] &quot;Arys Oakheart&quot;
+
+[[12]]$born
+[1] &quot;At Old Oak&quot;
+
+
+[[13]]
+[[13]]$name
+[1] &quot;Asha Greyjoy&quot;
+
+[[13]]$born
+[1] &quot;In 275 AC or 276 AC, at Pyke&quot;
+
+
+[[14]]
+[[14]]$name
+[1] &quot;Barristan Selmy&quot;
+
+[[14]]$born
+[1] &quot;In 237 AC&quot;
+
+
+[[15]]
+[[15]]$name
+[1] &quot;Varamyr&quot;
+
+[[15]]$born
+[1] &quot;At a village Beyond the Wall&quot;
+
+
+[[16]]
+[[16]]$name
+[1] &quot;Brandon Stark&quot;
+
+[[16]]$born
+[1] &quot;In 290 AC, at Winterfell&quot;
+
+
+[[17]]
+[[17]]$name
+[1] &quot;Brienne of Tarth&quot;
+
+[[17]]$born
+[1] &quot;In 280 AC&quot;
+
+
+[[18]]
+[[18]]$name
+[1] &quot;Catelyn Stark&quot;
+
+[[18]]$born
+[1] &quot;In 264 AC, at Riverrun&quot;
+
+
+[[19]]
+[[19]]$name
+[1] &quot;Cersei Lannister&quot;
+
+[[19]]$born
+[1] &quot;In 266 AC, at Casterly Rock&quot;
+
+
+[[20]]
+[[20]]$name
+[1] &quot;Eddard Stark&quot;
+
+[[20]]$born
+[1] &quot;In 263 AC, at Winterfell&quot;
+
+
+[[21]]
+[[21]]$name
+[1] &quot;Jaime Lannister&quot;
+
+[[21]]$born
+[1] &quot;In 266 AC, at Casterly Rock&quot;
+
+
+[[22]]
+[[22]]$name
+[1] &quot;Jon Connington&quot;
+
+[[22]]$born
+[1] &quot;In or between 263 AC and 265 AC&quot;
+
+
+[[23]]
+[[23]]$name
+[1] &quot;Jon Snow&quot;
+
+[[23]]$born
+[1] &quot;In 283 AC&quot;
+
+
+[[24]]
+[[24]]$name
+[1] &quot;Aeron Greyjoy&quot;
+
+[[24]]$born
+[1] &quot;In or between 269 AC and 273 AC, at Pyke&quot;
+
+
+[[25]]
+[[25]]$name
+[1] &quot;Kevan Lannister&quot;
+
+[[25]]$born
+[1] &quot;In 244 AC&quot;
+
+
+[[26]]
+[[26]]$name
+[1] &quot;Melisandre&quot;
+
+[[26]]$born
+[1] &quot;At Unknown&quot;
+
+
+[[27]]
+[[27]]$name
+[1] &quot;Merrett Frey&quot;
+
+[[27]]$born
+[1] &quot;In 262 AC&quot;
+
+
+[[28]]
+[[28]]$name
+[1] &quot;Quentyn Martell&quot;
+
+[[28]]$born
+[1] &quot;In 281 AC, at Sunspear, Dorne&quot;
+
+
+[[29]]
+[[29]]$name
+[1] &quot;Samwell Tarly&quot;
+
+[[29]]$born
+[1] &quot;In 283 AC, at Horn Hill&quot;
+
+
+[[30]]
+[[30]]$name
+[1] &quot;Sansa Stark&quot;
+
+[[30]]$born
+[1] &quot;In 286 AC, at Winterfell&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFwX2Rmcihnb3RfY2hhcnMsIGBbYCwgZGVzaXJlZF9pbmZvKVxuYGBgIn0= -->
+<pre class="r"><code>map_dfr(got_chars, `[`, desired_info)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6MzB9LCJyZGYiOiJINHNJQUFBQUFBQUFBNDFWMzFQYVFCQ09JTFZTRVZ0bittTnE3VDIxZlZCSFFTTThJclNsdHRSV3JQcTZrZ1ZTd3Axek9hQjU2OS9hUDBTNkYzTUJnbmJLRE1sbTk5dTliNys5UzA1cmw0WHNaZGF5ckpTVnppeFlxVFNaaXltNkxGaUwxcksrLzdLczlIb0lzS3cxK205R2dkeFpGd1ZuSHlVR1AwVVFPZGZPQXVtUzl3dHc3dm9LWmVSL2ZPNjJGSVNoMllURkM5ZnpJanRia1NoWVhTam9ScDVNdFl0S1JROUxWWW0ranp4NnpGZWtTNnNnYTRCVUdCZDVVZ1BrS0FPZm5ZSHNnQXppaE5VYURJWFBtZ2dqSVZWM3NtZ0FyRW5rZXFheGlzNCtnVjRYcVhMa1hLbjRYVWh3engrQmxOUWxjQ3JxOVkxNzZSd2s5QVBUZXU1SUFuZW84ZWsxMW82a2k1cThhR3VlTVp0Y0ZhaVhJQUd1b3ZUUm5STjE1YjNqZ0hSbXNQbGpjUHM0QjEwOUpnSlZRVTdlVWNJbzhsQjdtMXlNNHM1UnprMG8veG1ITUQvUmJBTTkxNmZPSkJvNkRaU1N4c1UrVUw1Si9qNUFycWlmMlNIbG10QWYwYVB1M1RQWVIwM2d2aG5GN0Y3YitNUlo0YkRFS2xVbUpGbGxzcllZS1BZdDZKbmxYNGFZb29sVVFaUDFBbllxV3IzcE1yWXBjNFZ0SVRGWnhvcnVteHA3Y0RpUC9Tb2tiYU5ZTWNYcTBIbnJzNFliQzdHdVUvZktobTFobDZ3bzlEUWthUnVTelFIM3IybVhSZEVYT2xyYU45R2FoSTdnUHMzTFZINFROckE3VCtvenpaVkkwSkFjc2lMMDg3QmNyTldGeTBtUk5rNmROOFZPUEVkdjlSbWREMktkN1R0MFh0YVk0dUdrcHcwcUEyeEk1eGc2eUk0d0VOeGhxb3ZzQXVLbFFpcmwzWHVwaEVWTFNhSHNXSXBUZDBpYmE4Q25aMjNiLzVwMXVLSmR2SGZGL3lqeG1pQ2h6R3FFYUtveGtwak1nd25WVys3RmllTmRNcThjNTAzMloxTFIvZjFKQVQyWUg3eEhCNU5QUSt6Q0JQSXFYSFF2dVpHMldFM0llTHM4aTVtRm9EcUZXTjJkSFVySnZrT2kyVTlBcHVXQjcwZEgwaml6RGlqWWFkT2JEcE53VGo0RFQ1bjN2SFlhKzRxSUpKS1dwUmp0bU1TY1R2eE5sL0Y0L0lkdU53bndrcmhXOUNraGFFcC9tVElKYWdzeTRjZ1B1Qzd0YkxlNkE5N2JMbWo2WWZqMmw0dnN6U2s3ZGJ0a2VoeVZ5a1NsSGlEdnVMSEFHUSt1ME1pNVNpMkVIZXhjUzVMUzZFUmVmMGZSUnkwK2RpM2hHVS9ZbTNYekZ5TTdKbldIQndBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["born"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"Theon Greyjoy","2":"In 278 AC or 279 AC, at Pyke"},{"1":"Tyrion Lannister","2":"In 273 AC, at Casterly Rock"},{"1":"Victarion Greyjoy","2":"In 268 AC or before, at Pyke"},{"1":"Will","2":""},{"1":"Areo Hotah","2":"In 257 AC or before, at Norvos"},{"1":"Chett","2":"At Hag's Mire"},{"1":"Cressen","2":"In 219 AC or 220 AC"},{"1":"Arianne Martell","2":"In 276 AC, at Sunspear"},{"1":"Daenerys Targaryen","2":"In 284 AC, at Dragonstone"},{"1":"Davos Seaworth","2":"In 260 AC or before, at King's Landing"},{"1":"Arya Stark","2":"In 289 AC, at Winterfell"},{"1":"Arys Oakheart","2":"At Old Oak"},{"1":"Asha Greyjoy","2":"In 275 AC or 276 AC, at Pyke"},{"1":"Barristan Selmy","2":"In 237 AC"},{"1":"Varamyr","2":"At a village Beyond the Wall"},{"1":"Brandon Stark","2":"In 290 AC, at Winterfell"},{"1":"Brienne of Tarth","2":"In 280 AC"},{"1":"Catelyn Stark","2":"In 264 AC, at Riverrun"},{"1":"Cersei Lannister","2":"In 266 AC, at Casterly Rock"},{"1":"Eddard Stark","2":"In 263 AC, at Winterfell"},{"1":"Jaime Lannister","2":"In 266 AC, at Casterly Rock"},{"1":"Jon Connington","2":"In or between 263 AC and 265 AC"},{"1":"Jon Snow","2":"In 283 AC"},{"1":"Aeron Greyjoy","2":"In or between 269 AC and 273 AC, at Pyke"},{"1":"Kevan Lannister","2":"In 244 AC"},{"1":"Melisandre","2":"At Unknown"},{"1":"Merrett Frey","2":"In 262 AC"},{"1":"Quentyn Martell","2":"In 281 AC, at Sunspear, Dorne"},{"1":"Samwell Tarly","2":"In 283 AC, at Horn Hill"},{"1":"Sansa Stark","2":"In 286 AC, at Winterfell"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[30]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Note: as Jenny says, it’s always safer (from a programming perspective) to work with output that’s more predictable. The following would be safer, and is still readable:</p>
@@ -670,6 +1031,13 @@ GrandBudapest2      Moonrise3      Chevalier         Zissou   FantasticFox     D
     )
 }</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6MzB9LCJyZGYiOiJINHNJQUFBQUFBQUFBNDFWMzFQVFFCQU9oWXBVU2xGbS9ERWkzcFA2QUIxb0ljQmpmNmlJSWtvUmVGMmFwWWxONzVqTGxabzMvMWIvRUhBdjNLVnRDbzZkYWJMWi9YYnYyMi92a3FQbVdhVndWbkFjSitkTTU2ZWMzRFNaTXptNlREa3p6cHkrLzNLYzZhVUU0RGlMOUY4eGdlS3hqNEt6anhMam55STJ6c1hqV0Fiay9RS2NCNUZDYWZ5UFQ0SzJnaVEwbmpCekdvU2hzUXMxaVlMdENRVys4ZVFiUGlwbEhtWWJFcU1JdVhrczFXUkFxeUE3QUtrd0xmS2tDY2hSeGhFN0J0a0JHYWNKQzAyNEVoRnJJUXlFVlA1dzBSaFlpOGgxYldNMW5YMElYUitwc25ITzF5SWZNdHhMZFpDU3VnUk9SY09lZGMrZWdJUmViRnN2MWlWd2p4b2ZYV094TGdQVTVNV0Y1cG15S1RhQWVva3o0QWJLQ0lNSlVlZmZleDVJYnd4YjJvZWdoeFBRaFgwaTBCRGs1QjBsckNJUHRiZkZ4U0R0SE9YRWhFcWY4UW9tSjFvNHdEQ0lxRE9KbHM0QlNrbmpZaDhvM3laLzd5TlgxTS80a0lvdDZBM29VZmNlV3V5akZ2RElqbUo4cnkxLzRxeXl2Y05xRFNZa1didGtyVEpRN0Z2Y3RjdS9UREJWRzJtQUpodkc3RWkwdTZObFhGdm1IQytFeEd3Wng5eFhOSFpyZXhMN1ZVamFScWxpaXUxQjUyM0VEb0pVaUNXZHVyRnIyVmJXeVRLaHB3bEoxNUpzOVhsMFNidk1SRi9vNk02bWpUWWxkQVNQYUY2MjhwdWtnZlZKVXA5cHJrU0NodVNSWmREUGszS3BWcWNCSjBVdWNPUzhLWFlZZW5xcmorbThsZXJzM3FIem5NWlV0NGM5TFZNWllGZDBqcUdEckk2eDRCNVRQckpUU0pkS3FPeXUzMHNsS2JxVEZjcE5wVGdLcm1oejlmbm9yRjMzWDdOT1ZuU3I5Njc0SHlWZUV5U1JXUTBRYlRWR0VwTzVOYVI2eTcwNmRMekw1dTJtZWNQOW1WVjBjM05ZUUEvbUIrL1N3ZVNqRUxjeWhMeEtGdDNJYnFSVjFoUXkzUzdQVW1ZSmFJOUNiQzhZSDhxT2U0ZEU0NStBZkR1RUtESkgwam9MSGlnb1g5Q2JEck53VGo0THo5bjN2SFphKzV5SVpKTG1wQmlVYldKUkovNm15ODNOelIrNlhXZkFzK0pTMGFlRW9EbjlaY3BucUUzSmpLUFU1N3EwdDliMis3eTdWdFgway9EdHIyanNsUkU3ZDd2azlJMHBsVGVsSGlEdkJLbkErUkRPMGNxNVFDMGtIWlF2SlVscGRTSnZWRmIwVVV1UFhWdUUxcFAwNWx6L0JRRVplQmFIQndBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["born"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"Theon Greyjoy","2":"In 278 AC or 279 AC, at Pyke"},{"1":"Tyrion Lannister","2":"In 273 AC, at Casterly Rock"},{"1":"Victarion Greyjoy","2":"In 268 AC or before, at Pyke"},{"1":"Will","2":""},{"1":"Areo Hotah","2":"In 257 AC or before, at Norvos"},{"1":"Chett","2":"At Hag's Mire"},{"1":"Cressen","2":"In 219 AC or 220 AC"},{"1":"Arianne Martell","2":"In 276 AC, at Sunspear"},{"1":"Daenerys Targaryen","2":"In 284 AC, at Dragonstone"},{"1":"Davos Seaworth","2":"In 260 AC or before, at King's Landing"},{"1":"Arya Stark","2":"In 289 AC, at Winterfell"},{"1":"Arys Oakheart","2":"At Old Oak"},{"1":"Asha Greyjoy","2":"In 275 AC or 276 AC, at Pyke"},{"1":"Barristan Selmy","2":"In 237 AC"},{"1":"Varamyr","2":"At a village Beyond the Wall"},{"1":"Brandon Stark","2":"In 290 AC, at Winterfell"},{"1":"Brienne of Tarth","2":"In 280 AC"},{"1":"Catelyn Stark","2":"In 264 AC, at Riverrun"},{"1":"Cersei Lannister","2":"In 266 AC, at Casterly Rock"},{"1":"Eddard Stark","2":"In 263 AC, at Winterfell"},{"1":"Jaime Lannister","2":"In 266 AC, at Casterly Rock"},{"1":"Jon Connington","2":"In or between 263 AC and 265 AC"},{"1":"Jon Snow","2":"In 283 AC"},{"1":"Aeron Greyjoy","2":"In or between 269 AC and 273 AC, at Pyke"},{"1":"Kevan Lannister","2":"In 244 AC"},{"1":"Melisandre","2":"At Unknown"},{"1":"Merrett Frey","2":"In 262 AC"},{"1":"Quentyn Martell","2":"In 281 AC, at Sunspear, Dorne"},{"1":"Samwell Tarly","2":"In 283 AC, at Horn Hill"},{"1":"Sansa Stark","2":"In 286 AC, at Winterfell"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[30]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Note the curly braces “tricks” the object prior to the pipe from entering as the first argument to <code>tibble</code>, because <code>``{``</code> only returns the last line evaluated. In this case there are two: the above code is equivalent to</p>
@@ -689,7 +1057,7 @@ GrandBudapest2      Moonrise3      Chevalier         Zissou   FantasticFox     D
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiY20xMDMgV29ya3NoZWV0IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKZWRpdG9yX29wdGlvbnM6IAogIGNodW5rX291dHB1dF90eXBlOiBpbmxpbmUKLS0tCgoKYGBge3J9CnN1cHByZXNzUGFja2FnZVN0YXJ0dXBNZXNzYWdlcyhsaWJyYXJ5KHRpZHl2ZXJzZSkpICMgTG9hZHMgcHVycnIsIHRvbwpsaWJyYXJ5KHJlcHVycnJzaXZlKSAjIENvbnRhaW5zIGRhdGEgZXhhbXBsZXMKbGlicmFyeShsaXN0dmlld2VyKSAjIEZvciB2aWV3aW5nIEpTT04vbGlzdHMgaW50ZXJhY3RpdmVseQpgYGAKCiMjIFJlc291cmNlcwoKVGhpcyB3ZWVrLCB3ZSdsbCBiZSBkcmF3aW5nIGZyb20gW0plbm55IEJyeWFuJ3MgYHB1cnJyYCB0dXRvcmlhbF0oaHR0cHM6Ly9qZW5ueWJjLmdpdGh1Yi5pby9wdXJyci10dXRvcmlhbC8pLiBTcGVjaWZpY2FsbHk6CgotIFRoZSBbYG1hcGAgdHV0b3JpYWxdKGh0dHBzOi8vamVubnliYy5naXRodWIuaW8vcHVycnItdHV0b3JpYWwvbHMwMV9tYXAtbmFtZS1wb3NpdGlvbi1zaG9ydGN1dHMuaHRtbCkKLSBUaGUgW0dpdEh1YiB1c2VycyB0dXRvcmlhbF0oaHR0cHM6Ly9qZW5ueWJjLmdpdGh1Yi5pby9wdXJyci10dXRvcmlhbC9sczAyX21hcC1leHRyYWN0aW9uLWFkdmFuY2VkLmh0bWwpIGlzIHNpbWlsYXIuCgpJbiBhZGRpdGlvbjoKCi0gRG8geW91IGZlZWwgdGhhdCB5b3UgbmVlZCBhIHJlZnJlc2hlciBvbiBsaXN0cyBhbmQgdmVjdG9ycyBpbiBSPyBDaGVjayBvdXQgdGhlIFtWZWN0b3JzIGFuZCBMaXN0c10oaHR0cHM6Ly9qZW5ueWJjLmdpdGh1Yi5pby9wdXJyci10dXRvcmlhbC9iazAwX3ZlY3RvcnMtYW5kLWxpc3RzLmh0bWwpIHBhcnQgb2YgdGhlIHR1dG9yaWFsLgotIEFyZSB5b3UgZmFtaWxpYXIgd2l0aCB0aGUgYGFwcGx5YCBmYW1pbHkgb2YgZnVuY3Rpb25zIGluIEJhc2UgUj8gWW91IG1pZ2h0IGZpbmQgSmVubnkncyBbIlJlbGF0aW9uc2hpcCB0byBiYXNlIGFuZCBwbHlyIGZ1bmN0aW9ucyJdKGh0dHBzOi8vamVubnliYy5naXRodWIuaW8vcHVycnItdHV0b3JpYWwvYmswMV9iYXNlLWZ1bmN0aW9ucy5odG1sKSBncmVhdCBmb3IgYnJpZGdpbmcgdGhlIGdhcCB0byBgcHVycnJgLgoKCiMjIFJldmlldyBWZWN0b3JzIGFuZCBMaXN0cwoKVmVjdG9yczogCj4gYXRvbWljL2hvbW9nZW5vdXMtLSBjYW4gb25seSBob2xkIDEgZGF0YSB0eXBlIChzaW1wbGUgc3R1ZmYgbGlrZSBjaGFyYWN0ZXJzLCBub3QgZnVuY3Rpb25zKQoKLSBob2xkIG11bHRpcGxlIGVudHJpZXMgb2YgdGhlIHNhbWUgdHlwZS4KLSBjb2VyY2VkIHRvIHRoZSBsZWFzdC1pbmZvcm1hdGl2ZSBkYXRhIHR5cGUgaW4gdGhlIHZlY3Rvci4KLSBzdWJzZXQgd2l0aCBzaW5nbGUgc3F1YXJlIGJyYWNrZXRzCgpMaXN0czoKCi0gaG9sZCBtdWx0aXBsZSBlbnRyaWVzIG9mIGFueXRoaW5nLgotIG5vIGVudHJpZXMgYXJlIGNvZXJjZWQgKGFzIGEgcmVzdWx0IG9mIGJlaW5nIGFibGUgdG8gaG9sZCBhbnl0aGluZykKLSBzdWJzZXQgd2l0aCBgW2AsIGBbW2AsIG9yIGAkYC4gCgo+IGxpc3QgaXMgYSB0cmFpbiwgZWFjaCBjYXIgaG9sZHMgc3R1ZmYgKHZlY3RvciwgZnVuY3Rpb24sIGV0YywgY2FuIGJlIGRpZmZlcmVudCkKPiBbMV0gaXMgZm9yIGNhciAxLCByZWdhcmRsZXNzIG9mIHdoYXQncyBpbiB0aGUgY2FyCj4gW1sxXV0gaXMgZm9yIGNvbnRlbnRzIG9mIGNhciAxCj4gJCBleHRyYWN0IGNvbXBvbmVudHMgb2YgbmFtZWQgY2FyCgojIyBSZXZpZXcgVmVjdG9yaXphdGlvbgoKPSBlbGVtZW50LXdpc2UgYXBwbGljYXRpb24gb2YgYSBmdW5jdGlvbi4KCkV4YW1wbGVzOgoKYGBge3J9CiMgbG9vcHMgYXV0b21hdGljYWxseSAod2lsbCBzcXVhcmUgZWFjaCBvbmUpCigxOjEwKSBeIDIKYGBgCgpgYGB7cn0KIyBzaG9ydGVyIHZlY3RvciB3aWxsIGJlIHJlY3ljbGVkIHRvIGZpbmlzaCBvdXQgbG9uZ2VyIHZlY3RvcgooMToxMCkgKiAoMToyKQpgYGAKCmBgYHtyfQpjb21tdXRlIDwtIGMoNDAsIDIwLCAzNSwgMTUpCnBlcnNvbiA8LSBjKCJQYXJ2ZWVuIiwgIkxlbyIsICJTaGF3biIsICJFbW1vdGlvbnMiKQpzdHJfYyhwZXJzb24sICIgdGFrZXMgIiwgY29tbXV0ZSwgIiBtaW51dGVzIHRvIGNvbW11dGUgdG8gd29yay4iKQpgYGAKCiMjIGBwdXJycmAKCmBwdXJycmAgaXMgZ3JlYXQgd2hlbiB2ZWN0b3JpemF0aW9uIGRvZXMgbm90IGFwcGx5ISAKClBhcnRpY3VsYXJseSB1c2VmdWwgaWYgeW91ciBkYXRhIGlzIGluIEpTT04gZm9ybWF0LiAKCkV4YW1wbGU6IAoKMS4gRXhwbG9yZSB0aGUgYHdlc2FuZGVyc29uYCBsaXN0IChjb21lcyB3aXRoIGByZXB1cnJyc2l2ZWAgcGFja2FnZSkuIEhpbnQ6IGBzdHIoKWAgbWlnaHQgaGVscC4gSXQncyBhIGxpc3Qgb2YgdmVjdG9ycy4gCjIuIFVzZSB3aGF0IHlvdSBrbm93IGFib3V0IFIgdG8gd3JpdGUgY29kZSB0aGF0IGV4dHJhY3RzIGEgdmVjdG9yIG9mIHRoZSBmaXJzdCBlbGVtZW50cyBvZiBlYWNoIHZlY3RvciBjb250YWluZWQgaW4gYHdlc2FuZGVyc29uYC4KCmBgYHtyfQpzdHIod2VzYW5kZXJzb24pCiMgdmVjdG9ycyBvZiBsZW5ndGhzIDE6NCBvciAxOjUsIHdpdGggaGV4IGNvbG9ycwoKIyBmb3IgbG9vcCBleGFtcGxlIChjb2RlIGdhcmJhZ2UgYmFzaWNhbGx5KQp4IDwtIGNoYXJhY3RlcigwKQpmb3IgKGkgaW4gMTpsZW5ndGgod2VzYW5kZXJzb24pKSB4W2ldIDwtIHdlc2FuZGVyc29uW1tpXV1bMV0KeAoKYGBgCgpgc3RyKClgIGlzIG5vdCBhbHdheXMgdXNlZnVsISBUcnkgY2hlY2tpbmcgdGhlIHN0cnVjdHVyZSBvZiBgZ290X2NoYXJzYCAoPSBHYW1lIG9mIFRocm9uZXMgY2hhcmFjdGVycyk6CgpgYGB7cn0Kc3RyKGdvdF9jaGFycykKCiNtYXgubGV2ZWwgaXMgaG93IG1hbnkgbGlzdHMgb2YgbGlzdHMgZG8geW91IHdhbnQgdG8gc2VlPyAKYGBgCgoKIyMgRXhwbG9yaW5nIGxpc3RzCgoxLiBgc3RyKClgOiBlbWJyYWNlIGBsaXN0LmxlbmAgYW5kIGBtYXgubGV2ZWxgCgpgYGB7cn0Kc3RyKGdvdF9jaGFycywgbGlzdC5sZW4gPSA0LCBtYXgubGV2ZWwgPSAyKQoKc3RyKGdvdF9jaGFyc1tbMV1dKQpgYGAKCjIuIEludGVyYWN0aXZlIGV4cGxvcmF0aW9uOiBgVmlldygpYCBhbmQgYGxpc3R2aWV3ZXI6Ompzb25lZGl0KC4uLiwgbW9kZSA9ICJ2aWV3IilgCgpgYGB7cn0KVmlldyhnb3RfY2hhcnMpCmpzb25lZGl0KGdvdF9jaGFycywgbW9kZT0idmlldyIpCmBgYAoKMy4gRG9uJ3QgYmUgYWZyYWlkIHRvIGNoZWNrIG91dCBhIHN1YnNldCEgYG5hbWVzKClgIGNvbWVzIGluIGhhbmR5LCB0b28uCgpgYGB7cn0Kc3RyKGdvdF9jaGFyc1tbMV1dKQpuYW1lcyhnb3RfY2hhcnNbWzFdXSkKYGBgCgoKIyMgRXhwbG9yaW5nIGBwdXJycmAgZnVuZGFtZW50YWxzCgpBcHBseSBhIGZ1bmN0aW9uIHRvIGVhY2ggZWxlbWVudCBpbiBhIGxpc3QvdmVjdG9yIHdpdGggYG1hcGAuCgpHZW5lcmFsIHVzYWdlOiBgcHVycnI6Om1hcChWRUNUT1JfT1JfTElTVCwgWU9VUl9GVU5DVElPTilgCgpOb3RlOgoKLSBgbWFwYCBhbHdheXMgcmV0dXJucyBhIGxpc3QuCi0gYFlPVVJfRlVOQ1RJT05gIGNhbiByZXR1cm4gYW55dGhpbmchCgpUb3kgZXhhbXBsZSAxOiB3aXRob3V0IHVzaW5nIHZlY3Rvcml6YXRpb24sIHRha2UgdGhlIHNxdWFyZSByb290IG9mIHRoZSBmb2xsb3dpbmcgdmVjdG9yOgoKYGBge3J9CnggPC0gMToxMAptYXAoeCwgc3FydCkKYGBgCgpUb3kgZXhhbXBsZSAyIChmdW5jdGlvbnMgb24tdGhlLWZseSk6IHdpdGhvdXQgdXNpbmcgdmVjdG9yaXphdGlvbiwgc3F1YXJlIGVhY2ggY29tcG9uZW50IG9mIGB4YDoKCmBgYHtyfQoKZnVuY3QgPC0gZnVuY3Rpb24odykgd14yCm1hcCh4LCBmdW5jdCkKYGBgCgpXYW50IGEgdmVjdG9yIHRvIGJlIHJldHVybmVkPyBNdXN0IHNwZWNpZnkgdGhlIGB0eXBlb2YoKWAgb2YgdGhlIHZlY3Rvci4gVXNlIGBtYXBfZGJsKClgIHRvIHNwZWNpZnkgYW4gb3V0cHV0IHZlY3RvciBvZiB0eXBlICJkb3VibGUiIGZvciB0aGUgYWJvdmUgKGNoZWNrIG91dCB0aGUgZG9jdW1lbnRhdGlvbiBgP21hcGAgZm9yIHRoZSBhY2NlcHRhYmxlIHZlY3RvciB0eXBlcyk6Cgo+IG1hcF90eXBlIGZ1bmN0aW9ucyAoZGJsIChkZWNpbWFsKSwgaW50ZWdlciwgY2hyLCBsZ2wgZm9yIGxvZ2ljYWwpCgpgYGB7cn0KbWFwX2RibCh4LCBzcXJ0KQptYXBfY2hyKHgsIHNxcnQpCmBgYAoKRG9lcyB5b3VyIGZ1bmN0aW9uIGhhdmUgb3RoZXIgYXJndW1lbnRzPyBZb3UgY2FuIHNwZWNpZnkgdGhlbSBhZnRlcndhcmRzIGluIHRoZSBlbGxpcHNlcyAoYC4uLmApLgoKYGBge3J9Cm1hcF9jaHIoeCwgc3RyX2MsICJwb3RhdG8uIiwgc2VwPSItIikKYGBgCgojIyBZb3VyIFR1cm46IGBwdXJycmAgZnVuZGFtZW50YWxzCgoxLiBMZXQncyByZXRyeSB0aGUgYHdlc2FuZGVyc29uYCBleGFtcGxlOiB1c2UgYHB1cnJyYCB0byB3cml0ZSBjb2RlIHRoYXQgZXh0cmFjdHMgYSB2ZWN0b3Igb2YgdGhlIGZpcnN0IGVsZW1lbnRzIG9mIGVhY2ggdmVjdG9yIGNvbnRhaW5lZCBpbiBgd2VzYW5kZXJzb25gLiBQbGF5IGFyb3VuZCB3aXRoIHRoZSBmb2xsb3dpbmcsIHRvbzoKICAgIC0gVXNlIGBoZWFkYCBpbnN0ZWFkIG9mIHdyaXRpbmcgeW91ciBvd24gZnVuY3Rpb24uCiAgICAtIFRyeSBkaWZmZXJlbnQgYG1hcGAgZnVuY3Rpb25zLCBldmVuIHRoZSAid3JvbmciIHR5cGVzLgogICAgLSBVc2UgdGhlIGAgYGBbYGAgYCBmdW5jdGlvbiBpZiB5b3UncmUgZmVlbGluZyBkYXJpbmcuCgp4IDwtIGNoYXJhY3RlcigwKQpmb3IgKGkgaW4gMTpsZW5ndGgod2VzYW5kZXJzb24pKSB4W2ldIDwtIHdlc2FuZGVyc29uW1tpXV1bMV0KCmBgYHtyfQojIE1ldGhvZCAxCnZlYzEgPC0gZnVuY3Rpb24oeCkgeFsxXSAjZnVuY3Rpb24gdGhhdCBzdWJzZXRzIGFueXRoaW5nIHRvIGl0cyBmaXJzdCBjb21wb25lbnQKbWFwX2Nocih3ZXNhbmRlcnNvbiwgdmVjMSkKCiMgTWV0aG9kIDI6IGhlYWQgCm1hcF9jaHIod2VzYW5kZXJzb24sIGhlYWQsIG49MSkKCiMgTWV0aG9kIDM6IGJlY2F1c2UgeFsxXSBpcyBhY3R1YWxseSB0aGUgZnVuY3Rpb24gYFtgKHgsIDEpIHVuZGVyIHRoZSBob29kCm1hcF9jaHIod2VzYW5kZXJzb24sIGBbYCwgMSkKYGBgCgoyLiBDaGVjayB0aGF0IGVhY2ggY2hhcmFjdGVyJ3MgbGlzdCBlbnRyeSBpbiBgZ290X2NoYXJzYCBoYXMgdGhlIHNhbWUgbmFtZXMgYXMgZXZlcnlvbmUgZWxzZSAodGhhdCBpcywgbGlzdCBjb21wb25lbnQgbmFtZXMsIG5vdCBjaGFyYWN0ZXIgbmFtZXMpLiBIZXJlJ3Mgb25lIHdheSB0byBkbyBpdDoKICAgIDEuIFVzZSB0aGUgYG5hbWVzYCBmdW5jdGlvbi4KICAgIDIuIFRoZW4sIGJpbmQgdGhlIG5hbWVzIHRvZ2V0aGVyIGluIGEgc2luZ2xlIGNoYXJhY3Rlci4KICAgIDMuIFRoZW4sIGFwcGx5IHRoZSBgdGFibGUoKWAgZnVuY3Rpb24uCgpgYGB7cn0KWU9VUl9DT0RFX0hFUkUKYGBgCgoKIyMgU2hvcnRjdXQgZnVuY3Rpb25zCgpXZSBjYW4gZG8gdGhlIHN1YnNldHRpbmcgbXVjaCBlYXNpZXIgd2l0aCB0aGVzZSBzaG9ydGN1dHM6IGp1c3QgcmVwbGFjZSBmdW5jdGlvbiB3aXRoIGVpdGhlcjoKCi0gaW5kZXggeW91J2QgbGlrZSB0byBzdWJzZXQgYnksIG9yCi0gbmFtZSB5b3UnZCBsaWtlIHRvIHN1YnNldCBieS4KCmBgYHtyfQptYXBfY2hyKHdlc2FuZGVyc29uLCAxKSAjICU+JSB1bm5hbWUoKQpgYGAKCgojIyBZb3VyIHR1cm46IHNob3J0Y3V0IGZ1bmN0aW9ucwoKMS4gRm9yIHRoZSBgZ290X2NoYXJzYCBkYXRhOgoKLSBXaGF0IGFyZSB0aGUgdGl0bGVzIG9mIGVhY2ggY2hhcmFjdGVyPyAKLSBJcyBhIHZlY3RvciBvdXRwdXQgYXBwcm9wcmlhdGUgaGVyZT8KLSBVc2UgYSBwaXBlLgoKTm90ZTogZWFjaCBjaGFyYWN0ZXIncyBsaXN0IGVudHJ5IGhhcyBhIGNvbXBvbmVudCBuYW1lZCBgdGl0bGVzYCBhcyB0aGUgOXRoIGVudHJ5LgoKYGBge3J9CllPVVJfQ09ERV9IRVJFCmBgYAoKMi4gRm9yIHRoZSBgZ290X2NoYXJzYCBkYXRhOgoKLSBFeHRyYWN0IGEgbGlzdCBvZiB0aGUgIm5hbWUiIGFuZCAiYm9ybiIgZGF0YSBmb3IgZWFjaCBwZXJzb24uCiAgICAtIFVzZSB0aGUgZnVuY3Rpb24gYCBgYFtgYCBgIG9yIGBleHRyYWN0KClgIChmcm9tIHRoZSBgbWFncml0dHJgIHBhY2thZ2UsIGRvZXMgdGhlIHNhbWUgdGhpbmcpIGZ1bmN0aW9uIHRvIGRvIHRoZSBzdWJzZXR0aW5nCi0gV2hhdCBoYXBwZW5zIHdoZW4gd2Ugc3dpdGNoIHRvIGBtYXBfZGZyYCBpbnN0ZWFkIG9mIGBtYXBgPyBIb3cgYWJvdXQgYG1hcF9kZmNgPwoKYGBge3J9CmRlc2lyZWRfaW5mbyA8LSBjKCJuYW1lIiwgImJvcm4iKQpgYGAKCk5vdGU6IGFzIEplbm55IHNheXMsIGl0J3MgYWx3YXlzIHNhZmVyIChmcm9tIGEgcHJvZ3JhbW1pbmcgcGVyc3BlY3RpdmUpIHRvIHdvcmsgd2l0aCBvdXRwdXQgdGhhdCdzIG1vcmUgcHJlZGljdGFibGUuIFRoZSBmb2xsb3dpbmcgd291bGQgYmUgc2FmZXIsIGFuZCBpcyBzdGlsbCByZWFkYWJsZToKCmBgYHtyfQpnb3RfY2hhcnMgJT4lIHsKICAgIHRpYmJsZSgKICAgICAgICBuYW1lID0gbWFwX2NociguLCAibmFtZSIpLAogICAgICAgIGJvcm4gPSBtYXBfY2hyKC4sICJib3JuIikKICAgICkKfQpgYGAKCk5vdGUgdGhlIGN1cmx5IGJyYWNlcyAidHJpY2tzIiB0aGUgb2JqZWN0IHByaW9yIHRvIHRoZSBwaXBlIGZyb20gZW50ZXJpbmcgYXMgdGhlIGZpcnN0IGFyZ3VtZW50IHRvIGB0aWJibGVgLCBiZWNhdXNlIGAgYGB7YGAgYCBvbmx5IHJldHVybnMgdGhlIGxhc3QgbGluZSBldmFsdWF0ZWQuIEluIHRoaXMgY2FzZSB0aGVyZSBhcmUgdHdvOiB0aGUgYWJvdmUgY29kZSBpcyBlcXVpdmFsZW50IHRvCgpgYGB7cn0KZ290X2NoYXJzICU+JSB7CiAgICAuCiAgICB0aWJibGUoCiAgICAgICAgbmFtZSA9IG1hcF9jaHIoLiwgIm5hbWUiKSwKICAgICAgICBib3JuID0gbWFwX2NociguLCAiYm9ybiIpCiAgICApCn0KYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiY20xMDMgV29ya3NoZWV0IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKZWRpdG9yX29wdGlvbnM6IAogIGNodW5rX291dHB1dF90eXBlOiBpbmxpbmUKLS0tCgoKYGBge3J9CnN1cHByZXNzUGFja2FnZVN0YXJ0dXBNZXNzYWdlcyhsaWJyYXJ5KHRpZHl2ZXJzZSkpICMgTG9hZHMgcHVycnIsIHRvbwpsaWJyYXJ5KHJlcHVycnJzaXZlKSAjIENvbnRhaW5zIGRhdGEgZXhhbXBsZXMKbGlicmFyeShsaXN0dmlld2VyKSAjIEZvciB2aWV3aW5nIEpTT04vbGlzdHMgaW50ZXJhY3RpdmVseQpgYGAKCiMjIFJlc291cmNlcwoKVGhpcyB3ZWVrLCB3ZSdsbCBiZSBkcmF3aW5nIGZyb20gW0plbm55IEJyeWFuJ3MgYHB1cnJyYCB0dXRvcmlhbF0oaHR0cHM6Ly9qZW5ueWJjLmdpdGh1Yi5pby9wdXJyci10dXRvcmlhbC8pLiBTcGVjaWZpY2FsbHk6CgotIFRoZSBbYG1hcGAgdHV0b3JpYWxdKGh0dHBzOi8vamVubnliYy5naXRodWIuaW8vcHVycnItdHV0b3JpYWwvbHMwMV9tYXAtbmFtZS1wb3NpdGlvbi1zaG9ydGN1dHMuaHRtbCkKLSBUaGUgW0dpdEh1YiB1c2VycyB0dXRvcmlhbF0oaHR0cHM6Ly9qZW5ueWJjLmdpdGh1Yi5pby9wdXJyci10dXRvcmlhbC9sczAyX21hcC1leHRyYWN0aW9uLWFkdmFuY2VkLmh0bWwpIGlzIHNpbWlsYXIuCgpJbiBhZGRpdGlvbjoKCi0gRG8geW91IGZlZWwgdGhhdCB5b3UgbmVlZCBhIHJlZnJlc2hlciBvbiBsaXN0cyBhbmQgdmVjdG9ycyBpbiBSPyBDaGVjayBvdXQgdGhlIFtWZWN0b3JzIGFuZCBMaXN0c10oaHR0cHM6Ly9qZW5ueWJjLmdpdGh1Yi5pby9wdXJyci10dXRvcmlhbC9iazAwX3ZlY3RvcnMtYW5kLWxpc3RzLmh0bWwpIHBhcnQgb2YgdGhlIHR1dG9yaWFsLgotIEFyZSB5b3UgZmFtaWxpYXIgd2l0aCB0aGUgYGFwcGx5YCBmYW1pbHkgb2YgZnVuY3Rpb25zIGluIEJhc2UgUj8gWW91IG1pZ2h0IGZpbmQgSmVubnkncyBbIlJlbGF0aW9uc2hpcCB0byBiYXNlIGFuZCBwbHlyIGZ1bmN0aW9ucyJdKGh0dHBzOi8vamVubnliYy5naXRodWIuaW8vcHVycnItdHV0b3JpYWwvYmswMV9iYXNlLWZ1bmN0aW9ucy5odG1sKSBncmVhdCBmb3IgYnJpZGdpbmcgdGhlIGdhcCB0byBgcHVycnJgLgoKCiMjIFJldmlldyBWZWN0b3JzIGFuZCBMaXN0cwoKVmVjdG9yczogCj4gYXRvbWljL2hvbW9nZW5vdXMtLSBjYW4gb25seSBob2xkIDEgZGF0YSB0eXBlIChzaW1wbGUgc3R1ZmYgbGlrZSBjaGFyYWN0ZXJzLCBub3QgZnVuY3Rpb25zKQoKLSBob2xkIG11bHRpcGxlIGVudHJpZXMgb2YgdGhlIHNhbWUgdHlwZS4KLSBjb2VyY2VkIHRvIHRoZSBsZWFzdC1pbmZvcm1hdGl2ZSBkYXRhIHR5cGUgaW4gdGhlIHZlY3Rvci4KLSBzdWJzZXQgd2l0aCBzaW5nbGUgc3F1YXJlIGJyYWNrZXRzCgpMaXN0czoKCi0gaG9sZCBtdWx0aXBsZSBlbnRyaWVzIG9mIGFueXRoaW5nLgotIG5vIGVudHJpZXMgYXJlIGNvZXJjZWQgKGFzIGEgcmVzdWx0IG9mIGJlaW5nIGFibGUgdG8gaG9sZCBhbnl0aGluZykKLSBzdWJzZXQgd2l0aCBgW2AsIGBbW2AsIG9yIGAkYC4gCgo+IGxpc3QgaXMgYSB0cmFpbiwgZWFjaCBjYXIgaG9sZHMgc3R1ZmYgKHZlY3RvciwgZnVuY3Rpb24sIGV0YywgY2FuIGJlIGRpZmZlcmVudCkKPiBbMV0gaXMgZm9yIGNhciAxLCByZWdhcmRsZXNzIG9mIHdoYXQncyBpbiB0aGUgY2FyCj4gW1sxXV0gaXMgZm9yIGNvbnRlbnRzIG9mIGNhciAxCj4gJCBleHRyYWN0IGNvbXBvbmVudHMgb2YgbmFtZWQgY2FyCgojIyBSZXZpZXcgVmVjdG9yaXphdGlvbgoKPSBlbGVtZW50LXdpc2UgYXBwbGljYXRpb24gb2YgYSBmdW5jdGlvbi4KCkV4YW1wbGVzOgoKYGBge3J9CiMgbG9vcHMgYXV0b21hdGljYWxseSAod2lsbCBzcXVhcmUgZWFjaCBvbmUpCigxOjEwKSBeIDIKYGBgCgpgYGB7cn0KIyBzaG9ydGVyIHZlY3RvciB3aWxsIGJlIHJlY3ljbGVkIHRvIGZpbmlzaCBvdXQgbG9uZ2VyIHZlY3RvcgooMToxMCkgKiAoMToyKQpgYGAKCmBgYHtyfQpjb21tdXRlIDwtIGMoNDAsIDIwLCAzNSwgMTUpCnBlcnNvbiA8LSBjKCJQYXJ2ZWVuIiwgIkxlbyIsICJTaGF3biIsICJFbW1vdGlvbnMiKQpzdHJfYyhwZXJzb24sICIgdGFrZXMgIiwgY29tbXV0ZSwgIiBtaW51dGVzIHRvIGNvbW11dGUgdG8gd29yay4iKQpgYGAKCiMjIGBwdXJycmAKCmBwdXJycmAgaXMgZ3JlYXQgd2hlbiB2ZWN0b3JpemF0aW9uIGRvZXMgbm90IGFwcGx5ISAKClBhcnRpY3VsYXJseSB1c2VmdWwgaWYgeW91ciBkYXRhIGlzIGluIEpTT04gZm9ybWF0LiAKCkV4YW1wbGU6IAoKMS4gRXhwbG9yZSB0aGUgYHdlc2FuZGVyc29uYCBsaXN0IChjb21lcyB3aXRoIGByZXB1cnJyc2l2ZWAgcGFja2FnZSkuIEhpbnQ6IGBzdHIoKWAgbWlnaHQgaGVscC4gSXQncyBhIGxpc3Qgb2YgdmVjdG9ycy4gCjIuIFVzZSB3aGF0IHlvdSBrbm93IGFib3V0IFIgdG8gd3JpdGUgY29kZSB0aGF0IGV4dHJhY3RzIGEgdmVjdG9yIG9mIHRoZSBmaXJzdCBlbGVtZW50cyBvZiBlYWNoIHZlY3RvciBjb250YWluZWQgaW4gYHdlc2FuZGVyc29uYC4KCmBgYHtyfQpzdHIod2VzYW5kZXJzb24pCiMgdmVjdG9ycyBvZiBsZW5ndGhzIDE6NCBvciAxOjUsIHdpdGggaGV4IGNvbG9ycwoKIyBmb3IgbG9vcCBleGFtcGxlIChjb2RlIGdhcmJhZ2UgYmFzaWNhbGx5KQp4IDwtIGNoYXJhY3RlcigwKQpmb3IgKGkgaW4gMTpsZW5ndGgod2VzYW5kZXJzb24pKSB4W2ldIDwtIHdlc2FuZGVyc29uW1tpXV1bMV0KeAoKYGBgCgpgc3RyKClgIGlzIG5vdCBhbHdheXMgdXNlZnVsISBUcnkgY2hlY2tpbmcgdGhlIHN0cnVjdHVyZSBvZiBgZ290X2NoYXJzYCAoPSBHYW1lIG9mIFRocm9uZXMgY2hhcmFjdGVycyk6CgpgYGB7cn0Kc3RyKGdvdF9jaGFycykKCiNtYXgubGV2ZWwgaXMgaG93IG1hbnkgbGlzdHMgb2YgbGlzdHMgZG8geW91IHdhbnQgdG8gc2VlPyAKYGBgCgoKIyMgRXhwbG9yaW5nIGxpc3RzCgoxLiBgc3RyKClgOiBlbWJyYWNlIGBsaXN0LmxlbmAgYW5kIGBtYXgubGV2ZWxgCgpgYGB7cn0Kc3RyKGdvdF9jaGFycywgbGlzdC5sZW4gPSA0LCBtYXgubGV2ZWwgPSAyKQoKc3RyKGdvdF9jaGFyc1tbMV1dKQpgYGAKCjIuIEludGVyYWN0aXZlIGV4cGxvcmF0aW9uOiBgVmlldygpYCBhbmQgYGxpc3R2aWV3ZXI6Ompzb25lZGl0KC4uLiwgbW9kZSA9ICJ2aWV3IilgCgpgYGB7cn0KVmlldyhnb3RfY2hhcnMpCmpzb25lZGl0KGdvdF9jaGFycywgbW9kZT0idmlldyIpCmBgYAoKMy4gRG9uJ3QgYmUgYWZyYWlkIHRvIGNoZWNrIG91dCBhIHN1YnNldCEgYG5hbWVzKClgIGNvbWVzIGluIGhhbmR5LCB0b28uCgpgYGB7cn0Kc3RyKGdvdF9jaGFyc1tbMV1dKQpuYW1lcyhnb3RfY2hhcnNbWzFdXSkKYGBgCgoKIyMgRXhwbG9yaW5nIGBwdXJycmAgZnVuZGFtZW50YWxzCgpBcHBseSBhIGZ1bmN0aW9uIHRvIGVhY2ggZWxlbWVudCBpbiBhIGxpc3QvdmVjdG9yIHdpdGggYG1hcGAuCgpHZW5lcmFsIHVzYWdlOiBgcHVycnI6Om1hcChWRUNUT1JfT1JfTElTVCwgWU9VUl9GVU5DVElPTilgCgpOb3RlOgoKLSBgbWFwYCBhbHdheXMgcmV0dXJucyBhIGxpc3QuCi0gYFlPVVJfRlVOQ1RJT05gIGNhbiByZXR1cm4gYW55dGhpbmchCgpUb3kgZXhhbXBsZSAxOiB3aXRob3V0IHVzaW5nIHZlY3Rvcml6YXRpb24sIHRha2UgdGhlIHNxdWFyZSByb290IG9mIHRoZSBmb2xsb3dpbmcgdmVjdG9yOgoKYGBge3J9CnggPC0gMToxMAptYXAoeCwgc3FydCkKYGBgCgpUb3kgZXhhbXBsZSAyIChmdW5jdGlvbnMgb24tdGhlLWZseSk6IHdpdGhvdXQgdXNpbmcgdmVjdG9yaXphdGlvbiwgc3F1YXJlIGVhY2ggY29tcG9uZW50IG9mIGB4YDoKCmBgYHtyfQoKZnVuY3QgPC0gZnVuY3Rpb24odykgd14yCm1hcCh4LCBmdW5jdCkKYGBgCgpXYW50IGEgdmVjdG9yIHRvIGJlIHJldHVybmVkPyBNdXN0IHNwZWNpZnkgdGhlIGB0eXBlb2YoKWAgb2YgdGhlIHZlY3Rvci4gVXNlIGBtYXBfZGJsKClgIHRvIHNwZWNpZnkgYW4gb3V0cHV0IHZlY3RvciBvZiB0eXBlICJkb3VibGUiIGZvciB0aGUgYWJvdmUgKGNoZWNrIG91dCB0aGUgZG9jdW1lbnRhdGlvbiBgP21hcGAgZm9yIHRoZSBhY2NlcHRhYmxlIHZlY3RvciB0eXBlcyk6Cgo+IG1hcF90eXBlIGZ1bmN0aW9ucyAoZGJsIChkZWNpbWFsKSwgaW50ZWdlciwgY2hyLCBsZ2wgZm9yIGxvZ2ljYWwpCgpgYGB7cn0KbWFwX2RibCh4LCBzcXJ0KQptYXBfY2hyKHgsIHNxcnQpCmBgYAoKRG9lcyB5b3VyIGZ1bmN0aW9uIGhhdmUgb3RoZXIgYXJndW1lbnRzPyBZb3UgY2FuIHNwZWNpZnkgdGhlbSBhZnRlcndhcmRzIGluIHRoZSBlbGxpcHNlcyAoYC4uLmApLgoKYGBge3J9Cm1hcF9jaHIoeCwgc3RyX2MsICJwb3RhdG8uIiwgc2VwPSItIikKYGBgCgojIyBZb3VyIFR1cm46IGBwdXJycmAgZnVuZGFtZW50YWxzCgoxLiBMZXQncyByZXRyeSB0aGUgYHdlc2FuZGVyc29uYCBleGFtcGxlOiB1c2UgYHB1cnJyYCB0byB3cml0ZSBjb2RlIHRoYXQgZXh0cmFjdHMgYSB2ZWN0b3Igb2YgdGhlIGZpcnN0IGVsZW1lbnRzIG9mIGVhY2ggdmVjdG9yIGNvbnRhaW5lZCBpbiBgd2VzYW5kZXJzb25gLiBQbGF5IGFyb3VuZCB3aXRoIHRoZSBmb2xsb3dpbmcsIHRvbzoKICAgIC0gVXNlIGBoZWFkYCBpbnN0ZWFkIG9mIHdyaXRpbmcgeW91ciBvd24gZnVuY3Rpb24uCiAgICAtIFRyeSBkaWZmZXJlbnQgYG1hcGAgZnVuY3Rpb25zLCBldmVuIHRoZSAid3JvbmciIHR5cGVzLgogICAgLSBVc2UgdGhlIGAgYGBbYGAgYCBmdW5jdGlvbiBpZiB5b3UncmUgZmVlbGluZyBkYXJpbmcuCgp4IDwtIGNoYXJhY3RlcigwKQpmb3IgKGkgaW4gMTpsZW5ndGgod2VzYW5kZXJzb24pKSB4W2ldIDwtIHdlc2FuZGVyc29uW1tpXV1bMV0KCmBgYHtyfQojIE1ldGhvZCAxCnZlYzEgPC0gZnVuY3Rpb24oeCkgeFsxXSAjZnVuY3Rpb24gdGhhdCBzdWJzZXRzIGFueXRoaW5nIHRvIGl0cyBmaXJzdCBjb21wb25lbnQKbWFwX2Nocih3ZXNhbmRlcnNvbiwgdmVjMSkKCiMgTWV0aG9kIDI6IGhlYWQgCm1hcF9jaHIod2VzYW5kZXJzb24sIGhlYWQsIG49MSkKCiMgTWV0aG9kIDM6IGJlY2F1c2UgeFsxXSBpcyBhY3R1YWxseSB0aGUgZnVuY3Rpb24gYFtgKHgsIDEpIHVuZGVyIHRoZSBob29kCm1hcF9jaHIod2VzYW5kZXJzb24sIGBbYCwgMSkKYGBgCgoyLiBDaGVjayB0aGF0IGVhY2ggY2hhcmFjdGVyJ3MgbGlzdCBlbnRyeSBpbiBgZ290X2NoYXJzYCBoYXMgdGhlIHNhbWUgbmFtZXMgYXMgZXZlcnlvbmUgZWxzZSAodGhhdCBpcywgbGlzdCBjb21wb25lbnQgbmFtZXMsIG5vdCBjaGFyYWN0ZXIgbmFtZXMpLiBIZXJlJ3Mgb25lIHdheSB0byBkbyBpdDoKICAgIDEuIFVzZSB0aGUgYG5hbWVzYCBmdW5jdGlvbi4KICAgIDIuIFRoZW4sIGJpbmQgdGhlIG5hbWVzIHRvZ2V0aGVyIGluIGEgc2luZ2xlIGNoYXJhY3Rlci4KICAgIDMuIFRoZW4sIGFwcGx5IHRoZSBgdGFibGUoKWAgZnVuY3Rpb24uCgpgYGB7cn0KWU9VUl9DT0RFX0hFUkUKYGBgCgoKIyMgU2hvcnRjdXQgZnVuY3Rpb25zCgpXZSBjYW4gZG8gdGhlIHN1YnNldHRpbmcgbXVjaCBlYXNpZXIgd2l0aCB0aGVzZSBzaG9ydGN1dHM6IGp1c3QgcmVwbGFjZSBmdW5jdGlvbiB3aXRoIGVpdGhlcjoKCi0gaW5kZXggeW91J2QgbGlrZSB0byBzdWJzZXQgYnksIG9yCi0gbmFtZSB5b3UnZCBsaWtlIHRvIHN1YnNldCBieS4KCmBgYHtyfQptYXBfY2hyKHdlc2FuZGVyc29uLCAxKSAjICU+JSB1bm5hbWUoKQpgYGAKCgojIyBZb3VyIHR1cm46IHNob3J0Y3V0IGZ1bmN0aW9ucwoKMS4gRm9yIHRoZSBgZ290X2NoYXJzYCBkYXRhOgoKLSBXaGF0IGFyZSB0aGUgdGl0bGVzIG9mIGVhY2ggY2hhcmFjdGVyPyAKLSBJcyBhIHZlY3RvciBvdXRwdXQgYXBwcm9wcmlhdGUgaGVyZT8KLSBVc2UgYSBwaXBlLgoKTm90ZTogZWFjaCBjaGFyYWN0ZXIncyBsaXN0IGVudHJ5IGhhcyBhIGNvbXBvbmVudCBuYW1lZCBgdGl0bGVzYCBhcyB0aGUgOXRoIGVudHJ5LgoKYGBge3J9CmdvdF9jaGFycyAlPiUgCiAgbWFwKCJ0aXRsZXMiKQpgYGAKCjIuIEZvciB0aGUgYGdvdF9jaGFyc2AgZGF0YToKCi0gRXh0cmFjdCBhIGxpc3Qgb2YgdGhlICJuYW1lIiBhbmQgImJvcm4iIGRhdGEgZm9yIGVhY2ggcGVyc29uLgogICAgLSBVc2UgdGhlIGZ1bmN0aW9uIGAgYGBbYGAgYCBvciBgZXh0cmFjdCgpYCAoZnJvbSB0aGUgYG1hZ3JpdHRyYCBwYWNrYWdlLCBkb2VzIHRoZSBzYW1lIHRoaW5nKSBmdW5jdGlvbiB0byBkbyB0aGUgc3Vic2V0dGluZwotIFdoYXQgaGFwcGVucyB3aGVuIHdlIHN3aXRjaCB0byBgbWFwX2RmcmAgaW5zdGVhZCBvZiBgbWFwYD8gSG93IGFib3V0IGBtYXBfZGZjYD8KCmBgYHtyfQpkZXNpcmVkX2luZm8gPC0gYygibmFtZSIsICJib3JuIikKCm1hcChnb3RfY2hhcnMsIGBbYCwgZGVzaXJlZF9pbmZvKQoKbWFwX2Rmcihnb3RfY2hhcnMsIGBbYCwgZGVzaXJlZF9pbmZvKSAjcHV0IGl0IGluIGEgZGF0YSBmcmFtZSEgbm93IHdlIGNhbiB1c2UgaXQgCmBgYAoKTm90ZTogYXMgSmVubnkgc2F5cywgaXQncyBhbHdheXMgc2FmZXIgKGZyb20gYSBwcm9ncmFtbWluZyBwZXJzcGVjdGl2ZSkgdG8gd29yayB3aXRoIG91dHB1dCB0aGF0J3MgbW9yZSBwcmVkaWN0YWJsZS4gVGhlIGZvbGxvd2luZyB3b3VsZCBiZSBzYWZlciwgYW5kIGlzIHN0aWxsIHJlYWRhYmxlOgoKYGBge3J9CmdvdF9jaGFycyAlPiUgewogICAgdGliYmxlKAogICAgICAgIG5hbWUgPSBtYXBfY2hyKC4sICJuYW1lIiksCiAgICAgICAgYm9ybiA9IG1hcF9jaHIoLiwgImJvcm4iKQogICAgKQp9CmBgYAoKTm90ZSB0aGUgY3VybHkgYnJhY2VzICJ0cmlja3MiIHRoZSBvYmplY3QgcHJpb3IgdG8gdGhlIHBpcGUgZnJvbSBlbnRlcmluZyBhcyB0aGUgZmlyc3QgYXJndW1lbnQgdG8gYHRpYmJsZWAsIGJlY2F1c2UgYCBgYHtgYCBgIG9ubHkgcmV0dXJucyB0aGUgbGFzdCBsaW5lIGV2YWx1YXRlZC4gSW4gdGhpcyBjYXNlIHRoZXJlIGFyZSB0d286IHRoZSBhYm92ZSBjb2RlIGlzIGVxdWl2YWxlbnQgdG8KCmBgYHtyfQpnb3RfY2hhcnMgJT4lIHsKICAgIC4KICAgIHRpYmJsZSgKICAgICAgICBuYW1lID0gbWFwX2NociguLCAibmFtZSIpLAogICAgICAgIGJvcm4gPSBtYXBfY2hyKC4sICJib3JuIikKICAgICkKfQpgYGAKCg==</div>
 
 
 
