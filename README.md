@@ -13,4 +13,4 @@ For 547 assignments, folders begin with 1 (e.g. class 3 assignments are in 103).
 
 [class 3](https://github.com/MielleM/STAT545_participation/tree/master/103)
 
-[class 4](https://github.com/MielleM/STAT545_participation/tree/master/104)
+[class 4](https://github.com/MielleM/STAT545_participation/blob/master/104/cm104.nb.html)
