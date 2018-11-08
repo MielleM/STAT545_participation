@@ -1,0 +1,7 @@
+---
+title: "README"
+author: "Mielle"
+date: "November 8, 2018"
+output: github_document
+---
+Contains powers package developed in classes 105 and 106 of STAT 547. 
