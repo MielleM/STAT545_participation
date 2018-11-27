@@ -18,3 +18,11 @@ For 547 assignments, folders begin with 1 (e.g. class 3 assignments are in 103).
 [class 5 and 6](https://github.com/MielleM/STAT545_participation/tree/master/105/powers)
 
 [class 7 and 8](https://github.com/MielleM/STAT545_participation/blob/master/107/bcl/app.R)
+
+[class 9](https://github.com/MielleM/STAT545_participation/tree/master/109/cm109-automation_examples)
+
+[class 10](https://github.com/MielleM/STAT545_participation/tree/master/110/word_hist)
+
+[class 11]()
+
+[class 12]()
