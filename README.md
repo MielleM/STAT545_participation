@@ -23,6 +23,6 @@ For 547 assignments, folders begin with 1 (e.g. class 3 assignments are in 103).
 
 [class 10](https://github.com/MielleM/STAT545_participation/tree/master/110/word_hist)
 
-[class 11]()
+[class 11](https://github.com/MielleM/STAT545_participation/tree/master/111)
 
-[class 12]()
+[class 12](https://github.com/MielleM/STAT545_participation/tree/master/112)
